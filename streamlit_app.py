@@ -34,7 +34,7 @@ import numpy as np
 if st.checkbox('Show dataframe'):
     st.title("Dataframe Example")
     chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
+        np.random.randn(20, 4),
         columns=['a', 'b', 'c'],
     )
     st.dataframe(chart_data)  # Same as st.write(df)
