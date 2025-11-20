@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("My new Streamlit app")
-st.write("Let's start building! For help and inspiration --- My name : Alpha Amadou BAH")
+st.write("Let's start building! For help and inspiration")
 st.text("Alpha Amadou BAH - Data Analyst")
 
 df = pd.DataFrame({
