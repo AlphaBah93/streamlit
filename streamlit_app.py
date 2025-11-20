@@ -14,5 +14,6 @@ st.write(pd.DataFrame({
 }))
 
 dataframe = np.random.randn(10, 20)
-st.dataframe(dataframe)  # Same as st.write(dataframe)
+st.dataframe(dataframe)  
+st.write(dataframe)
 
