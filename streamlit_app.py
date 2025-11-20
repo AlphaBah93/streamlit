@@ -27,6 +27,14 @@ import numpy as np
 #st.write(x, 'squared is', x * x)
 
 # Text input widget with Session State ------------------
-st.title("Text Input with Session State Example")
-st.text_input("Your name", key="name")
-st.session_state.name
+# st.title("Text Input with Session State Example")
+#st.text_input("Your name", key="name")
+#st.session_state.name
+
+if st.checkbox('Show dataframe'):
+    st.title("Dataframe Example")
+    chart_data = pd.DataFrame(
+        np.random.randn(20, 3),
+        columns=['a', 'b', 'c'],
+    )
+    st.dataframe(chart_data)  # Same as st.write(df)
