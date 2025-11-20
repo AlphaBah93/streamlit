@@ -12,6 +12,6 @@ import numpy as np
 # st.dataframe(dataframe.style.highlight_max(axis=0))
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['a', 'b', 'c'])
-st.write(chart_data)
+st.write(chart_data.style.highlight_max(axis=0))
 
 st.line_chart(chart_data)
