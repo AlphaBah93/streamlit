@@ -6,10 +6,7 @@ import numpy as np
 #st.write("Let's start building! For help and inspiration")
 #st.text("Alpha Amadou BAH - Data Analyst")
 
-
-dataframe = pd.DataFrame(
-    np.random.randn(10, 20),
-    columns=('col %d' % i for i in range(20)))
-
-st.dataframe(dataframe.style.highlight_min(axis=0))
+#Styler
+dataframe = pd.DataFrame(np.random.randn(10, 20), columns=('col %d' % i for i in range(20)))
+st.dataframe(dataframe.style.highlight_max(axis=0))
 
