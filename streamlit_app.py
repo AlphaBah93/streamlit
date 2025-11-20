@@ -16,8 +16,7 @@ import numpy as np
 # st.write(chart_data.style.highlight_max(axis=0))
 # st.line_chart(chart_data)
 
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=['lat', 'lon'])
-
+# Map with Styler ------------------
+st.title("Map Example")
+map_data = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.map(map_data)
