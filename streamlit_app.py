@@ -13,7 +13,6 @@ st.write(pd.DataFrame({
     'second column': [10, 20, 30, 40]
 }))
 
-dataframe = np.random.randn(10, 20)
+dataframe = np.random.randn(5, 10)
 st.dataframe(dataframe)  
-st.write(dataframe)
 
