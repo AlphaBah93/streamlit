@@ -22,6 +22,11 @@ import numpy as np
 # st.map(map_data)
 
 # Slider widget ------------------
-st.title("Slider Example")
-x = st.slider('x', min_value=0, max_value=100, value=60, step=2)  # 👈 this is a widget
-st.write(x, 'squared is', x * x)
+# st.title("Slider Example")
+#x = st.slider('x', min_value=0, max_value=100, value=60, step=2)  # 👈 this is a widget
+#st.write(x, 'squared is', x * x)
+
+# Text input widget with Session State ------------------
+st.title("Text Input with Session State Example")
+st.text_input("Your name", key="name")
+st.session_state.name
