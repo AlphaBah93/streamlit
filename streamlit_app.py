@@ -40,6 +40,8 @@ import numpy as np
 #    )
 #    st.dataframe(chart_data)  # Same as st.write(df)
 
+# Selectbox widget ------------------
+st.title("Selectbox Example")
 df = pd.DataFrame({
     'first column': [1, 2, 3, 4],
     'second column': [10, 20, 30, 40]
