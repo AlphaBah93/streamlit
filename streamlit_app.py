@@ -21,5 +21,7 @@ import numpy as np
 # map_data = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 # st.map(map_data)
 
+# Slider widget ------------------
+st.title("Slider Example")
 x = st.slider('x', min_value=0, max_value=100, value=60, step=2)  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
