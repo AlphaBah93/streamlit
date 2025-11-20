@@ -31,10 +31,22 @@ import numpy as np
 #st.text_input("Your name", key="name")
 #st.session_state.name
 
-if st.checkbox('Show dataframe'):
-    st.title("Dataframe Example")
-    chart_data = pd.DataFrame(
-        np.random.randn(20, 4),
-        columns=['a', 'b', 'c', 'd'],
-    )
-    st.dataframe(chart_data)  # Same as st.write(df)
+# Display dataframe on checkbox ------------------
+# if st.checkbox('Show dataframe'):
+#    st.title("Dataframe Example")
+#    chart_data = pd.DataFrame(
+#        np.random.randn(20, 4),
+#        columns=['a', 'b', 'c', 'd'],
+#    )
+#    st.dataframe(chart_data)  # Same as st.write(df)
+
+df = pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40]
+    })
+
+option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
+
+'You selected: ', option
