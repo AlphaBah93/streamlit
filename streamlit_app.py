@@ -7,12 +7,9 @@ import numpy as np
 #st.text("Alpha Amadou BAH - Data Analyst")
 
 
-st.write("Here's our first attempt at using data to create a table:")
-st.write(pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
-}))
+dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
 
-dataframe = np.random.randn(5, 10)
-st.dataframe(dataframe)  
+st.dataframe(dataframe.style.highlight_max(axis=0))
 
