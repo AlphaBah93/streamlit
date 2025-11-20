@@ -35,6 +35,6 @@ if st.checkbox('Show dataframe'):
     st.title("Dataframe Example")
     chart_data = pd.DataFrame(
         np.random.randn(20, 4),
-        columns=['a', 'b', 'c'],
+        columns=['a', 'b', 'c', 'd'],
     )
     st.dataframe(chart_data)  # Same as st.write(df)
